@@ -7,6 +7,69 @@
 }
 
 body {
-  background-color: violet;
   font-family: 'PT Sans', sans-serif;
+}
+
+.flex-box {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Regole header */
+
+#main-nav {
+  margin: 0 auto;
+  padding: 10px 0;
+  justify-content: space-around;
+}
+
+.row {
+  width: 60%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: calc(100% / 3 - 10px);
+  margin: 5px;
+}
+
+.row .col:first-child {
+  width: calc((100% / 3) * 2 - 10px);
+}
+
+
+/* DEBUG */
+
+body {
+  background-color: violet;
+}
+
+header {
+  background-color: aqua;
+}
+
+#main-nav {
+  background-color: brown;
+}
+
+#logo {
+  background-color: aquamarine;
+}
+
+#nav-info {
+  background-color: aquamarine;
+}
+
+.row {
+  background-color: blueviolet;
+}
+
+.col {
+  height: 150px;
+  background-color: burlywood;
+  border: 1px solid black;
 }
