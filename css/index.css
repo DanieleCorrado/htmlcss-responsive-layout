@@ -72,6 +72,47 @@ ul {
   margin-bottom: 30px;
 }
 
+/* Regole testimonial */
+
+#testimonial {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#testimonial-infos, .testimonial-quote{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.testimonial-quote {
+  background-color: blue;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#testimonial-infos {
+  margin-bottom: 20px;
+}
+
+#testimonial-infos span {
+  margin-bottom: 20px;
+}
+
+#testimonial-infos h2 {
+  margin-bottom: 20px;
+}
+
+.testimonial-opinion p {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.testimonial-opinion span {
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 30px;
+}
 
 
 /* Regole footer */
@@ -149,10 +190,6 @@ header {
   border: 1px solid black;
 }
 
-main {
-  /* height: 300px; */
-  background-color: blue;
-}
 
 
 
@@ -164,4 +201,19 @@ main {
   height: 200px;
   width: 300px;
   background-color: blueviolet;
+}
+
+#strategic-planning {
+  background-color: blue;
+}
+
+#testimonial {
+  /* height: 300px; */
+  background-color: red;
+}
+
+.testimonial-photo {
+  width: 300px;
+  height: 100px;
+  background-color: aqua;
 }
