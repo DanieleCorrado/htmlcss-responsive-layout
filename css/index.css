@@ -18,6 +18,12 @@ ul {
   list-style: none;
 }
 
+.clear-fix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Regole header */
 
 #main-nav {
@@ -40,6 +46,30 @@ ul {
 
 .row .col:first-child {
   width: calc((100% / 3) * 2 - 10px);
+}
+
+/* regole sezione principale */
+
+/* Regole strategic planning */
+
+#strategic-planning-info {
+  width: 50%;
+  margin: 0 auto;
+  background-color: aqua;
+  padding: 40px 0;
+}
+
+#strategic-planning-info .img2 {
+  float: right;
+}
+
+#strategic-planning-description {
+  width: 50%;
+  padding-top: 21px;
+}
+
+#strategic-planning-description h3 {
+  margin-bottom: 30px;
 }
 
 
@@ -120,12 +150,18 @@ header {
 }
 
 main {
-  height: 300px;
+  /* height: 300px; */
   background-color: blue;
 }
 
 
 
 #get-started {
+  background-color: blueviolet;
+}
+
+.img1, .img2 {
+  height: 200px;
+  width: 300px;
   background-color: blueviolet;
 }
