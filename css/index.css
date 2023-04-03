@@ -28,7 +28,8 @@ ul {
 
 .row {
   width: 60%;
-  margin: 20px auto;
+  margin: 0px auto;
+  padding: 20px 0;
   flex-wrap: wrap;
 }
 
@@ -42,10 +43,54 @@ ul {
 }
 
 
+
+/* Regole footer */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#get-started {
+  padding-top: 20px;
+}
+
+#get-started span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+#get-started h3 {
+  margin-bottom: 40px;
+}
+
+#get-started h2 {
+  margin-bottom: 20px;
+}
+
+#get-started p {
+  margin-bottom: 20px;
+}
+
+#get-started button {
+  margin-bottom: 20px;
+}
+
+#legal-infos {
+  padding: 20px 0;
+}
+
+#legal-infos p {
+  margin-bottom: 30px;
+}
+
+
 /* DEBUG */
 
 body {
-  background-color: violet;
+  background-color: white;
 }
 
 header {
@@ -72,4 +117,15 @@ header {
   height: 150px;
   background-color: burlywood;
   border: 1px solid black;
+}
+
+main {
+  height: 300px;
+  background-color: blue;
+}
+
+
+
+#get-started {
+  background-color: blueviolet;
 }
