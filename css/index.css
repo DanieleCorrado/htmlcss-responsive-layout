@@ -39,13 +39,44 @@ ul {
   flex-wrap: wrap;
 }
 
-.col {
+#jumbotrone .row .col {
   width: calc(100% / 3 - 10px);
   margin: 5px;
+  padding: 20px 10px 0;
 }
 
-.junbotrone .row .col:first-child {
+#jumbotrone .row .col p {
+  text-align: center;
+  margin: 30px 0;
+  width: 90%;
+}
+
+#jumbotrone .row .col h3 {
+  text-align: center;
+}
+
+#jumbotrone .row .col:first-child {
   width: calc((100% / 3) * 2 - 10px);
+}
+
+#jumbotrone .row .col #get-demo-description p {
+  text-align: left;
+}
+
+#jumbotrone .row .col #get-demo-description h3 {
+  text-align: left;
+}
+
+#jumbotrone .row .col #get-demo-image  {
+  margin-top: 50px;
+  width: 30%;
+  margin-right: 40px;
+}
+
+#jumbotrone .row .col img {
+  margin: 0 50%;
+  transform: translate(-50%);
+  margin-bottom: 20px;
 }
 
 /* regole sezione principale */
@@ -139,7 +170,30 @@ ul {
   margin: 10px 0;
 }
 
+/* Regole about us */
 
+#about-us {
+  width: 60%;
+  margin: 0 auto;
+  padding: 40px 0;
+  justify-content: space-between;
+}
+
+#about-us-description {
+  width: 65%;
+}
+
+#about-us-description h2 {
+  padding-bottom: 20px;
+}
+
+#about-us-description p {
+  margin-bottom: 30px;
+}
+
+#about-us-quotes {
+  width: 30%;
+}
 
 
 
@@ -213,7 +267,7 @@ header {
 }
 
 .col {
-  height: 350px;
+  /* height: 350px; */
   background-color: burlywood;
   border: 1px solid black;
 }
@@ -250,3 +304,35 @@ header {
 /* #benefits {
   height: 800px;
 } */
+
+#about-us {
+  height: 500px;
+  background-color: red;
+}
+
+#about-us-description {
+  background-color: aqua;
+}
+
+#about-us-quotes {
+  background-color: blue;
+  margin-left: 5px;
+}
+
+.img3 {
+  height: 150px;
+  width: 200px;
+  background-color: blueviolet;
+}
+
+.img4 {
+  height: 100%;
+  width: 180px;
+  background-color: blueviolet;
+}
+
+.img5 {
+  height: 60px;
+  width: 50px;
+  background-color: blueviolet;
+}
