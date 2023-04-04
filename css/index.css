@@ -29,23 +29,94 @@ ul {
   clear: both;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.generic-button {
+  padding: 5px;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.white-button {
+  background-color: white;
+  padding: 5px 0;
+}
+
+.blue-button {
+  background-color: rgb(0, 132, 253);
+  color: white;
+}
+
+.purple-button {
+  background-color: rgb(151, 146, 228);
+  color: white;
+}
+
+.circular-photo {
+  width: 550px;
+  margin: 20px 0;
+}
+
+.photo {
+  max-width: 100%;
+  clip-path: circle();
+}
+
+
 /* Regole header */
 
+header {
+  background-color: rgb(0, 132, 253);
+}
+
+#logo span {
+  font-size: 30px;
+}
+
 #main-nav {
+  width: 95%;
   margin: 0 auto;
   padding: 10px 0;
   justify-content: space-around;
+  color: white;
+}
+
+#nav-info {
+  flex-basis: 450px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-info ul{
+  flex-basis: 350px;
+  justify-content: space-between;
 }
 
 .row {
-  width: 60%;
+  width: 70%;
   margin: 0px auto;
   padding: 20px 0;
   flex-wrap: wrap;
 }
 
+/* Regole jumbotrone */
+
+#jumbotrone {
+  background-color: white;
+}
+
 #jumbotrone .row .col {
   padding: 20px 10px 0;
+  background-color: rgb(181, 221, 255);
+  border-radius: 3%;
 }
 
 #jumbotrone .row .col p {
@@ -56,55 +127,114 @@ ul {
 
 #jumbotrone .row .col h3 {
   text-align: center;
+  color: rgb(0, 132, 253);
 }
 
 #jumbotrone .row .col:first-child {
   width: calc((100% / 3) * 2 - 10px);
 }
 
-#jumbotrone .row .col #get-demo-description p {
+#get-demo-description {
+  width: 50%;
+}
+
+#jumbotrone .row .col:first-child p {
   text-align: left;
 }
 
-#jumbotrone .row .col #get-demo-description h3 {
-  text-align: left;
+#get-demo-image {
+  height: 300px;
+  align-self: flex-end;
 }
 
-#jumbotrone .row .col #get-demo-image  {
-  margin-top: 50px;
-  width: 30%;
-  margin-right: 40px;
+#phone-image {
+  display: block;
+  max-height: 100%;
 }
 
-#jumbotrone .row .col img {
+#get-demo-image {
+  width: 50%;
+}
+
+#jumbotrone .row .col i {
   margin: 0 50%;
   transform: translate(-50%);
   margin-bottom: 20px;
+  font-size: 100px;
+  color: rgb(0, 132, 253);
+}
+
+#jumbotrone .row .col:first-child i {
+  margin: 0;
+  font-size: 16px;
+  color: white;
 }
 
 /* regole sezione principale */
 
 /* Regole strategic planning */
+#strategic-planning {
+  background-color: rgb(151, 146, 228);
+  color: white;
+}
 
 #strategic-planning-info {
   width: 60%;
   margin: 0 auto;
-  background-color: aqua;
   padding: 40px 0;
+  background-color: rgb(151, 146, 228);
+  justify-content: space-between;
 }
 
-#strategic-planning-info .img2 {
-  float: right;
+#strategic-planning-explain h2 {
+  margin: 150px 0 40px;
 }
 
-#strategic-planning-description {
+#strategic-planning-explain {
   width: 50%;
-  padding-top: 21px;
 }
 
-#strategic-planning-description h3 {
-  margin-bottom: 30px;
+#development-planning-explain {
+  width: 40%;
+  color: black;
 }
+
+.planning-image {
+  max-width: 100%;
+}
+
+#development-planning-explain {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10%;
+  align-self: flex-end;
+  text-align: center;
+}
+
+#development-planning-explain h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#development-planning-explain #go-down {
+  margin-top: 20px;
+  height: 50px;
+  width: 50px;
+  color: black;
+  background-color: rgb(151, 146, 228);
+  border-radius: 100%;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+#go-down span {
+  display: inline-block;
+  margin-top: 50% ;
+  transform: translate(0, -50%);
+  font-size: 30px;
+}
+
 
 /* Regole testimonial */
 
@@ -113,15 +243,32 @@ ul {
   padding: 20px 0;
 }
 
+#testimonial h2 {
+  font-size: 30px;
+  color: rgb(151, 146, 228);
+}
+
 #testimonial-infos, .testimonial-quote{
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
 .testimonial-quote {
-  background-color: blue;
-  padding: 5px;
+  background-color: rgb(151, 146, 228);
+  padding: 10px;
   margin-bottom: 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.testimonial-photo {
+  width: 550px;
+  margin: 20px 0;
+}
+
+.photo {
+  max-width: 100%;
+  clip-path: circle();
 }
 
 #testimonial-infos {
@@ -138,6 +285,7 @@ ul {
 
 .testimonial-opinion p {
   text-align: left;
+  margin-top: 20px;
   margin-left: 30px;
 }
 
@@ -152,8 +300,9 @@ ul {
 
 #benefits {
   padding: 40px 0;
-  background-color: brown;
+  background-color: rgb(151, 146, 228);
   text-align: center;
+  color: white;
 }
 
 #benefits-infos {
@@ -162,7 +311,14 @@ ul {
 
 #benefits-infos .col {
   text-align: left;
-  padding: 20px 10px;
+  padding: 20px;
+  background-color: white;
+  color: rgb(151, 146, 228);
+  border-radius: 20px;
+}
+
+#benefits-infos .col h2 {
+  font-size: 40px;
 }
 
 #benefits-infos .col h3 {
@@ -176,10 +332,15 @@ ul {
 /* Regole about us */
 
 #about-us {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
   padding: 40px 0;
   justify-content: space-between;
+}
+
+#about-us h2 {
+  color: rgb(151, 146, 228);
+  font-size: 50px;
 }
 
 #about-us-description {
@@ -195,8 +356,92 @@ ul {
 }
 
 #about-us-quotes {
-  width: 30%;
+  width: 20%;
 }
+
+#about-us-quotes .circular-photo {
+  width: 200px;
+  margin: 20px 0;
+  position: relative;
+}
+
+
+#about-us-quotes .fa-quote-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 60px;
+  color: rgb(151, 146, 228);
+}
+
+#about-us-quotes strong {
+  display: inline-block;
+  color: rgb(151, 146, 228);
+}
+
+#about-us-quotes button {
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+
+/* Regole get started */
+
+#get-started {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  background-color: rgb(151, 146, 228);
+}
+
+#get-started span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+
+
+#get-started h3 {
+  font-size: 50px;
+}
+
+#get-started h2 {
+  font-size: 100px;
+  color: rgb(253, 193, 95);
+}
+
+#get-started p {
+  width: 40%;
+  margin: 20px auto;
+  margin-bottom: 20px;
+}
+
+#get-started button {
+  margin-bottom: 20px;
+}
+
+#get-started .generic-button {
+  padding: 30px 80px;
+  border-radius: 40px;
+  color: rgb(151, 146, 228);
+  font-size: 25px;
+}
+
+#get-started .flex-box {
+  width: 30%;
+  margin: 0 auto;
+  align-items:center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+#get-started .fa-circle {
+  font-size: 5px;
+}
+
+#get-started a {
+  text-decoration: underline;
+}
+
 
 
 
@@ -209,32 +454,9 @@ footer {
   padding-bottom: 10px;
 }
 
-#get-started {
-  padding-top: 20px;
-}
-
-#get-started span {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-#get-started h3 {
-  margin-bottom: 40px;
-}
-
-#get-started h2 {
-  margin-bottom: 20px;
-}
-
-#get-started p {
-  margin-bottom: 20px;
-}
-
-#get-started button {
-  margin-bottom: 20px;
-}
-
 #legal-infos {
+  width: 40%;
+  margin: 0 auto;
   padding: 20px 0;
 }
 
@@ -242,100 +464,8 @@ footer {
   margin-bottom: 30px;
 }
 
-
-/* DEBUG */
-
-body {
-  background-color: white;
+#legal-infos a {
+  text-decoration: underline;
+  color: rgb(131, 127, 197)
 }
 
-header {
-  background-color: aqua;
-}
-
-#main-nav {
-  background-color: brown;
-}
-
-#logo {
-  background-color: aquamarine;
-}
-
-#nav-info {
-  background-color: aquamarine;
-}
-
-.row {
-  background-color: blueviolet;
-}
-
-.col {
-  /* height: 350px; */
-  background-color: burlywood;
-  border: 1px solid black;
-}
-
-
-
-
-
-#get-started {
-  background-color: blueviolet;
-}
-
-.img1, .img2 {
-  height: 200px;
-  width: 300px;
-  background-color: blueviolet;
-}
-
-#strategic-planning {
-  background-color: blue;
-}
-
-#testimonial {
-  /* height: 300px; */
-  background-color: red;
-}
-
-.testimonial-photo {
-  width: 300px;
-  height: 100px;
-  background-color: aqua;
-}
-
-/* #benefits {
-  height: 800px;
-} */
-
-#about-us {
-  height: 500px;
-  background-color: red;
-}
-
-#about-us-description {
-  background-color: aqua;
-}
-
-#about-us-quotes {
-  background-color: blue;
-  margin-left: 5px;
-}
-
-.img3 {
-  height: 150px;
-  width: 200px;
-  background-color: blueviolet;
-}
-
-.img4 {
-  height: 100%;
-  width: 180px;
-  background-color: blueviolet;
-}
-
-.img5 {
-  height: 60px;
-  width: 50px;
-  background-color: blueviolet;
-}

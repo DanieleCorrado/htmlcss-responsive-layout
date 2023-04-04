@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/index.css">
     <title>Responsive layout</title>
   </head>
@@ -22,18 +23,19 @@
       <nav id="main-nav" class="flex-box">
 
         <div id="logo">
-          logo
+          <span>logo</span>
         </div>
 
         <div id="nav-info" class="flex-box">
 
           <ul class="flex-box">
-            <li><a href="">link n</a></li>
-            <li><a href="">link n</a></li>
-            <li><a href="">link n</a></li>
+            <li><a href="">Planning</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">About Us</a></li>
           </ul>
 
-          <button>Get Started</button>
+          <button class="generic-button white-button">Get Started</button>
 
         </div>
 
@@ -53,18 +55,20 @@
 
             <div id="get-demo-description">
 
-              <h3>PLACE HOLDER</h3>
+              <h3>Get a demo application</h3>
 
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia fugiat iure id, molestiae atque omnis eum labore maxime sequi iusto, quis vel sunt vitae non neque et impedit ipsam reprehenderit.
               </p>
 
-              <button>place holder</button>
+              <button class="generic-button blue-button">
+                <i class="fa-brands fa-apple"></i>
+              App Store</button>
 
             </div>
 
             <div id="get-demo-image">
-              <img class="img4" src="" alt="">
+              <img id="phone-image" src="img/phone.png" alt="">
             </div>
 
           </div>
@@ -73,9 +77,9 @@
 
           <div class="col">
 
-            <img class="img5" src="" alt="">
+            <i class="fa-solid fa-code"></i>
 
-            <h3>PLACE HOLDER</h3>
+            <h3>Clean Code</h3>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint soluta ratione fugiat eos. Temporibus nam, tempora quisquam ducimus vel ut cum tempore non perspiciatis, iusto praesentium dolore totam recusandae nisi.
@@ -87,23 +91,9 @@
 
           <div class="col">
 
-            <img class="img5" src="" alt="">
+            <i class="fa-solid fa-compass-drafting"></i>
 
-            <h3>PLACE HOLDER</h3>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint soluta ratione fugiat eos. Temporibus nam, tempora quisquam ducimus vel ut cum tempore non perspiciatis, iusto praesentium dolore totam recusandae nisi.
-            </p>
-            
-          </div>
-
-          <!-- Colonna -->
-
-          <div class="col">
-
-            <img class="img5" src="" alt="">
-
-            <h3>PLACE HOLDER</h3>
+            <h3>Web Design</h3>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint soluta ratione fugiat eos. Temporibus nam, tempora quisquam ducimus vel ut cum tempore non perspiciatis, iusto praesentium dolore totam recusandae nisi.
@@ -115,9 +105,23 @@
 
           <div class="col">
 
-            <img class="img5" src="" alt="">
+            <i class="fa-solid fa-laptop-code"></i>
 
-            <h3>PLACE HOLDER</h3>
+            <h3>Development</h3>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint soluta ratione fugiat eos. Temporibus nam, tempora quisquam ducimus vel ut cum tempore non perspiciatis, iusto praesentium dolore totam recusandae nisi.
+            </p>
+            
+          </div>
+
+          <!-- Colonna -->
+
+          <div class="col">
+
+            <i class="fa-solid fa-bullhorn"></i>
+
+            <h3>Branding</h3>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint soluta ratione fugiat eos. Temporibus nam, tempora quisquam ducimus vel ut cum tempore non perspiciatis, iusto praesentium dolore totam recusandae nisi.
@@ -139,22 +143,37 @@
 
       <section id="strategic-planning">
 
-        <div id="strategic-planning-info">
+        <div id="strategic-planning-info" class="flex-box">
 
-          <div class="clear-fix">
-            <img class="img1" src="" alt="">
+          <div id="strategic-planning-explain">
+
+            <img class="planning-image" src="img/planning1.png" alt="">
+
+            <div id="strategi-planning-description">
+
+              <h2>Strategic Planning</h2>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ut modi fugit molestiae voluptatum illum rerum enim maiores! Ullam aspernatur odit labore assumenda a laborum? Esse debitis aut facilis minus!
+              </p>
+
+            </div>
+
           </div>
 
-          <div class="clear-fix">
+          <div id="development-planning-explain">
 
-            <img class="img2" src="" alt="">
+            <img class="planning-image" src="img/planning2.png" alt="">
 
-            <div id="strategic-planning-description">
-              
-              <h3>PLACE HOLDER</h3>
+            <div id="strategi-planning-description">
+
+              <h2>Strategic Planning</h2>
+
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus tempore voluptates nam qui, mollitia minima quisquam exercitationem, quos illo dolore saepe! Suscipit ducimus et quidem eos in quam eligendi voluptas.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ut modi fugit molestiae voluptatum illum rerum enim maiores! Ullam aspernatur odit labore assumenda a laborum? Esse debitis aut facilis minus!
               </p>
+
+              <div id="go-down"><span><i class="fa-solid fa-arrow-down"></i></span></div>
 
             </div>
 
@@ -170,25 +189,29 @@
 
         <div id="testimonial-infos">
 
-          <span>place holder</span>
-          <h2>PLACE HOLDER</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis fugit quaerat ipsum provident, tempora, explicabo omnis expedita natus eum voluptatem, reiciendis sequi culpa ex asperiores sed quasi unde possimus quod?</p>
+          <span>TESTIMONIALS</span>
+          <h2>We are committed expert partners</h2>
+          <p>We place huge value on strong relationship and have seen the benefit they bring to our business. Customers feedback is vital in helping us to get it right. </p>
 
         </div>
 
         <div class="testimonial-quote flex-box">
 
-          <div class="testimonial-photo">
-            <img src="" alt="">
+          <div class="circular-photo">
+
+            <img class="photo" src="img/testimonial1.jpg" alt="testimonial">
+
           </div>
 
           <div class="testimonial-opinion">
 
             <p>
+              <i class="fa-solid fa-quote-left"></i>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum consectetur expedita, obcaecati similique magni rem architecto provident iusto eius explicabo accusamus quo culpa dignissimos necessitatibus impedit magnam asperiores nostrum.
+              <i class="fa-solid fa-quote-right"></i>
             </p>
 
-            <span>place holder</span>
+            <span>NAT REYNOLDS</span>
 
           </div>
           
@@ -196,17 +219,22 @@
 
         <div class="testimonial-quote flex-box">
 
-          <div class="testimonial-photo">
-            <img src="" alt="">
+          <div class="circular-photo">
+
+            <img class="photo" src="img/testimonial2.jpg" alt="testimonial">
+
           </div>
+
 
           <div class="testimonial-opinion">
 
             <p>
+              <i class="fa-solid fa-quote-left"></i>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum consectetur expedita, obcaecati similique magni rem architecto provident iusto eius explicabo accusamus quo culpa dignissimos necessitatibus impedit magnam asperiores nostrum.
+              <i class="fa-solid fa-quote-right"></i>
             </p>
 
-            <span>place holder</span>
+            <span>CELIA ALMEDA</span>
 
           </div>
           
@@ -214,17 +242,22 @@
 
         <div class="testimonial-quote flex-box">
 
-          <div class="testimonial-photo">
-            <img src="" alt="">
+          <div class="circular-photo">
+
+            <img class="photo" src="img/testimonial3.jpg" alt="testimonial">
+
           </div>
+
 
           <div class="testimonial-opinion">
 
             <p>
+              <i class="fa-solid fa-quote-left"></i>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam harum consectetur expedita, obcaecati similique magni rem architecto provident iusto eius explicabo accusamus quo culpa dignissimos necessitatibus impedit magnam asperiores nostrum.
+              <i class="fa-solid fa-quote-right"></i>
             </p>
 
-            <span>place holder</span>
+            <span>BOB ROBERTS</span>
 
           </div>
           
@@ -238,7 +271,7 @@
 
         <div id="benefits-infos">
 
-          <h2>PLACE HOLDER</h2>
+          <h2>Benefits of working with us</h2>
 
           <!-- Riga -->
 
@@ -248,62 +281,30 @@
 
             <div class="col">
 
-              <h2>N</h2>
+              <h2>01</h2>
 
-              <h3>PLACE HOLDER</h3>
+              <h3>Hight Quality</h3>
 
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel voluptatibus perspiciatis ratione, ullam minus mollitia maxime in quas similique minima ipsa molestiae consectetur laborum eaque labore fuga, itaque repellat!
               </p>
 
-              <button>place holder</button>
+              <button class="generic-button purple-button">more</button>
 
             </div>
 
             <!-- colonna -->
 
             <div class="col">
-              <h2>N</h2>
+              <h2>02</h2>
 
-              <h3>PLACE HOLDER</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel voluptatibus perspiciatis ratione, ullam minus mollitia maxime in quas similique minima ipsa molestiae consectetur laborum eaque labore fuga, itaque repellat!
-              </p>
-
-              <button>place holder</button>
-
-            </div>
-
-            <!-- colonna -->
-
-            <div class="col">
-
-              <h2>N</h2>
-
-              <h3>PLACE HOLDER</h3>
+              <h3>Creative Team</h3>
 
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel voluptatibus perspiciatis ratione, ullam minus mollitia maxime in quas similique minima ipsa molestiae consectetur laborum eaque labore fuga, itaque repellat!
               </p>
 
-              <button>place holder</button>
-
-            </div>
-
-            <!-- colonna -->
-
-
-            <div class="col">
-              <h2>N</h2>
-
-              <h3>PLACE HOLDER</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel voluptatibus perspiciatis ratione, ullam minus mollitia maxime in quas similique minima ipsa molestiae consectetur laborum eaque labore fuga, itaque repellat!
-              </p>
-
-              <button>place holder</button>
+              <button class="generic-button purple-button">more</button>
 
             </div>
 
@@ -311,15 +312,47 @@
 
             <div class="col">
 
-              <h2>N</h2>
+              <h2>03</h2>
 
-              <h3>PLACE HOLDER</h3>
+              <h3>Amazing Result</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel voluptatibus perspiciatis ratione, ullam minus mollitia maxime in quas similique minima ipsa molestiae consectetur laborum eaque labore fuga, itaque repellat!
+              </p>
+
+              <button class="generic-button purple-button">more</button>
+
+            </div>
+
+            <!-- colonna -->
+
+
+            <div class="col">
+              <h2>04</h2>
+
+              <h3>Best Pricing</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel voluptatibus perspiciatis ratione, ullam minus mollitia maxime in quas similique minima ipsa molestiae consectetur laborum eaque labore fuga, itaque repellat!
+              </p>
+
+              <button class="generic-button purple-button">more</button>
+
+            </div>
+
+            <!-- colonna -->
+
+            <div class="col">
+
+              <h2>05</h2>
+
+              <h3>Innovations</h3>
               
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel voluptatibus perspiciatis ratione, ullam minus mollitia maxime in quas similique minima ipsa molestiae consectetur laborum eaque labore fuga, itaque repellat!
               </p>
               
-              <button>place holder</button>
+              <button class="generic-button purple-button">more</button>
             
             </div>
 
@@ -327,15 +360,15 @@
 
             <div class="col">
 
-              <h2>N</h2>
+              <h2>06</h2>
               
-              <h3>PLACE HOLDER</h3>
+              <h3>24/7 Support</h3>
               
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae vel voluptatibus perspiciatis ratione, ullam minus mollitia maxime in quas similique minima ipsa molestiae consectetur laborum eaque labore fuga, itaque repellat!
               </p>
               
-              <button>place holder</button>
+              <button class="generic-button purple-button">more</button>
             
             </div>
 
@@ -351,7 +384,7 @@
 
         <div id="about-us-description">
 
-          <h2>PLACE HOLDER</h2>
+          <h2>About Us</h2>
 
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus adipisci consequuntur nihil mollitia nisi voluptatibus, porro explicabo, rem asperiores nemo omnis laudantium aut enim? Aut, expedita. Illum mollitia quia qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse enim error fuga dicta atque nobis quas delectus blanditiis quo minus. Quidem sequi perspiciatis molestiae harum ipsam voluptatum cupiditate tempore praesentium!
@@ -366,9 +399,39 @@
 
         <div id="about-us-quotes">
 
-          <img class="img3" src="" alt="">
+          <div class="circular-photo">
+            <img class="photo" src="img/about.jpg" alt="">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+
           <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
 
+          <button class="generic-button purple-button"><i class="fa-brands fa-linkedin"></i> Find me on linkedim</button>
+
+        </div>
+
+      </section>
+
+      <!-- Sezione get-started -->
+
+      <section id="get-started">
+
+        <span>GET STARTED</span>
+
+        <h3>Simple, Transparent Pricing</h3>
+
+        <h2>It&#39;s Free!</h2>
+
+        <p>We're still in beta and we will be for awhile. As we add more funcionality we'll look into other plans with more controls.</p>
+
+        <button class="generic-button white-button">Get Started</button><br>
+
+        <div class="flex-box">
+          Copyriht 2021 Boolean 
+          <i class="fa-solid fa-circle"> </i> 
+          Classe XX
+          <i class="fa-solid fa-circle"> </i>
+          <a href="#">Privacy policy</a>
         </div>
 
       </section>
@@ -379,27 +442,16 @@
 
     <footer>
 
-      <div id="get-started">
-
-        <span>place holder</span>
-
-        <h3>PLACE HOLDER</h3>
-
-        <h3>PLACE HOLDER</h3>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-        <button>Place holder</button><br>
-
-        <span>place holder</span>
-
-      </div>
 
       <div id="legal-infos">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
 
-        <span>place holder</span>
+        <p>
+          <a href="#">Lorem ipsum</a>dolor sit amet consectetur<a href="#">Boolean careers</a>
+        </p>
 
       </div>
 
